@@ -27,3 +27,10 @@ h1 {
   color: hotpink;
   font-family: 'Pacifico', cursive;
 }
+
+img {
+  width: 100px; /* Adjust width */
+  height: auto;
+  margin-right: 10px; /* Add margin between image and text */
+  vertical-align: middle; /* Align image with text */
+}
