@@ -1,36 +1,45 @@
+/* Grid layout for the posts */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-}
-
-.post {
-  background-color: lightpink;
-  border: 2px solid hotpink;
-  text-align: center;
   padding: 20px;
+}
+
+/* Styling for each post card */
+.post-card {
+  border: 1px solid #ccc;
   border-radius: 10px;
-  font-family: 'Pacifico', cursive;
+  padding: 15px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
 }
 
-.post img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.post-page {
-  padding: 40px;
-  background-color: lightyellow;
-}
-
-h1 {
-  color: hotpink;
-  font-family: 'Pacifico', cursive;
-}
-
-img {
-  width: 100px; /* Adjust width */
+.post-card img {
+  width: 100%;
   height: auto;
-  margin-right: 10px; /* Add margin between image and text */
-  vertical-align: middle; /* Align image with text */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.post-card h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0;
+}
+
+/* Hover effect for post cards */
+.post-card:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+/* Title styling */
+h1 {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
 }
