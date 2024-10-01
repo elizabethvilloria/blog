@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './App.css';  // Change this line to import App.css
 
 const Home = () => {
   const posts = [
@@ -13,11 +14,9 @@ const Home = () => {
       <h1>Mauve</h1>
       <div className="grid-container">
         {posts.map(post => (
-          <Link key={post.id} to={`/post/${post.id}`}>
-            <div className="post-card">
-              <img src={post.image} alt={post.title} />
-              <h2>{post.title}</h2>
-            </div>
+          <Link key={post.id} to={`/post/${post.id}`} className="post-card">
+            <img src={post.image} alt={post.title} />
+            <h2>{post.title}</h2>
           </Link>
         ))}
       </div>

@@ -1,39 +1,50 @@
 /* Grid layout for the posts */
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .post-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .post-card {
+    width: 100%;
+  }
 }
 
 /* Styling for each post card */
 .post-card {
-  border: 1px solid #ccc;
+  width: calc(33.333% - 20px);
+  min-width: 250px;
+  max-width: 300px;
+  text-decoration: none;
+  color: inherit;
+  background-color: #f0f0f0;
   border-radius: 10px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  transition: box-shadow 0.3s ease;
-  text-align: center;
+  overflow: hidden;
 }
 
 .post-card img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .post-card h2 {
-  font-size: 1.2em;
-  color: #333;
+  padding: 10px;
   margin: 0;
-}
-
-/* Hover effect for post cards */
-.post-card:hover {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-  transition: 0.3s ease-in-out;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /* Title styling */
@@ -42,4 +53,15 @@ h1 {
   text-align: center;
   color: #2c3e50;
   margin-bottom: 30px;
+}
+
+/* Center everything */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
