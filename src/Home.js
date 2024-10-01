@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h1>Tips & Tricks for Girls</h1>
+      <h1>Mauve</h1>
       <div className="grid-container">
         {posts.map(post => (
           <Link key={post.id} to={`/post/${post.id}`}>
