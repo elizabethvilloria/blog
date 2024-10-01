@@ -6,27 +6,28 @@
   justify-content: center;
   gap: 20px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px; /* Increased from 900px to allow for larger cards */
 }
 
 /* Responsive adjustments */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .post-card {
     width: calc(50% - 20px);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .post-card {
     width: 100%;
+    max-width: 500px; /* Allows for larger cards on mobile */
   }
 }
 
 /* Styling for each post card */
 .post-card {
   width: calc(33.333% - 20px);
-  min-width: 250px;
-  max-width: 300px;
+  min-width: 300px; /* Increased from 250px */
+  max-width: 400px; /* Increased from 300px */
   text-decoration: none;
   color: inherit;
   background-color: #f0f0f0;
