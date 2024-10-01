@@ -50,10 +50,14 @@
 
 /* Title styling */
 h1 {
-  font-family: 'Arial', sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
+  color: #FFB6C1; /* This is a blush pink color */
   margin-bottom: 30px;
+  font-size: 3rem; /* Increased font size */
+  font-weight: bold;
+  text-transform: uppercase; /* Optional: makes the text all caps */
+  letter-spacing: 2px; /* Optional: adds some spacing between letters */
 }
 
 /* Center everything */
