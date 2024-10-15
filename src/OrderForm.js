@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useOrder } from './OrderContext';
 
 const OrderForm = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const { placeOrder } = useOrder();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,8 +22,8 @@ const OrderForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // We'll handle the submission in a future commit
+    placeOrder({ ...formData, postId: id });
+    navigate('/order-confirmation');
   };
 
   return (
@@ -66,4 +69,3 @@ const OrderForm = () => {
 };
 
 export default OrderForm;
-
