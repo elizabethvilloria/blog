@@ -6,6 +6,7 @@ import OrderConfirmation from './OrderConfirmation';
 import { OrderProvider } from './OrderContext';
 import Navigation from './Navigation';
 import About from './About';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/order/:id" element={<OrderForm />} />
           <Route path="/order-confirmation" element={<OrderConfirmation />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </OrderProvider>
