@@ -203,3 +203,58 @@ h1:hover {
 .nav-link:hover {
   text-decoration: underline;
 }
+
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.about-page h1 {
+  color: #FFB6C1;
+  text-align: center;
+}
+
+.about-page p {
+  margin-bottom: 20px;
+}
+
+.post-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-page h1 {
+  color: #FFB6C1;
+  text-align: center;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.post-page p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
