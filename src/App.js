@@ -7,20 +7,26 @@ import { OrderProvider } from './OrderContext';
 import Navigation from './Navigation';
 import About from './About';
 import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
   return (
     <OrderProvider>
       <Router>
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/post/:id" element={<Post />} />
-          <Route path="/order/:id" element={<OrderForm />} />
-          <Route path="/order-confirmation" element={<OrderConfirmation />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="app-container">
+          <Navigation />
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/post/:id" element={<Post />} />
+              <Route path="/order/:id" element={<OrderForm />} />
+              <Route path="/order-confirmation" element={<OrderConfirmation />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </Router>
     </OrderProvider>
   );
