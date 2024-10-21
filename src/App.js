@@ -4,11 +4,13 @@ import Post from './Post';
 import OrderForm from './OrderForm';
 import OrderConfirmation from './OrderConfirmation';
 import { OrderProvider } from './OrderContext';
+import Navigation from './Navigation';
 
 function App() {
   return (
     <OrderProvider>
       <Router>
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/post/:id" element={<Post />} />
