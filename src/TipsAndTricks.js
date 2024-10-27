@@ -1,5 +1,6 @@
 import React from 'react';
 import SubmitStory from './SubmitStory';
+import UserSubmissions from './UserSubmissions';
 
 const TipsAndTricks = () => {
   const tips = [
@@ -19,6 +20,7 @@ const TipsAndTricks = () => {
           </div>
         ))}
       </div>
+      <UserSubmissions />
       <SubmitStory />
     </div>
   );

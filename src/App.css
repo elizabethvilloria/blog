@@ -505,3 +505,36 @@ h1:hover {
 .submit-story button:hover {
   background-color: #FF69B4;
 }
+
+.user-submissions {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.user-submissions h2 {
+  color: #FFB6C1;
+  text-align: center;
+}
+
+.submission-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.submission-card h3 {
+  color: #FF69B4;
+  margin-top: 0;
+}
+
+.category-tag {
+  display: inline-block;
+  background-color: #FFB6C1;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
