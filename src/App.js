@@ -8,6 +8,7 @@ import Navigation from './Navigation';
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
+import TipsAndTricks from './TipsAndTricks';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/order-confirmation" element={<OrderConfirmation />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/tips" element={<TipsAndTricks />} />
             </Routes>
           </main>
           <Footer />
