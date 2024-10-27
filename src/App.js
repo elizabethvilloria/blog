@@ -9,6 +9,7 @@ import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
 import TipsAndTricks from './TipsAndTricks';
+import Shop from './Shop';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/tips" element={<TipsAndTricks />} />
+              <Route path="/shop" element={<Shop />} />
             </Routes>
           </main>
           <Footer />
