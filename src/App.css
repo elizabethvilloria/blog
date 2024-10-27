@@ -462,3 +462,46 @@ h1:hover {
 .newsletter-signup button:hover {
   background-color: #FF69B4;
 }
+
+.submit-story {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.submit-story h2 {
+  color: #FFB6C1;
+  text-align: center;
+}
+
+.submit-story form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-story label {
+  margin-top: 10px;
+}
+
+.submit-story input,
+.submit-story textarea,
+.submit-story select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.submit-story button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #FFB6C1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-story button:hover {
+  background-color: #FF69B4;
+}

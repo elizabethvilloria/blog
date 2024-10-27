@@ -1,4 +1,5 @@
 import React from 'react';
+import SubmitStory from './SubmitStory';
 
 const TipsAndTricks = () => {
   const tips = [
@@ -18,9 +19,9 @@ const TipsAndTricks = () => {
           </div>
         ))}
       </div>
+      <SubmitStory />
     </div>
   );
 };
 
 export default TipsAndTricks;
-
