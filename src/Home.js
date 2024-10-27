@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NewsletterSignup from './NewsletterSignup';
 import './App.css';
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
           </div>
         ))}
       </div>
+      <NewsletterSignup />
     </div>
   );
 };
