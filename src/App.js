@@ -10,6 +10,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 import TipsAndTricks from './TipsAndTricks';
 import Shop from './Shop';
+import BackToTop from './BackToTop';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             </Routes>
           </main>
           <Footer />
+          <BackToTop />
         </div>
       </Router>
     </OrderProvider>
