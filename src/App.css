@@ -578,3 +578,14 @@ h1:hover {
 .back-to-top:hover {
   background-color: #FF69B4;
 }
+
+.error-page {
+  text-align: center;
+  padding: 50px;
+  color: #FF69B4;
+}
+
+.error-page h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
