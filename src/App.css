@@ -615,3 +615,43 @@ h1:hover {
   margin: 0;
   font-size: 1.1em;
 }
+
+/* Button animation styles */
+.order-button, 
+.nav-link, 
+form button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.order-button:active, 
+form button:active {
+  transform: scale(0.95);
+}
+
+/* Pulse animation for important buttons */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add pulse animation to main call-to-action buttons */
+.order-button:hover {
+  animation: pulse 1s infinite;
+  background-color: #FF69B4;
+}
+
+/* Add subtle transition to all buttons */
+button, 
+.nav-link, 
+.order-button {
+  transition: all 0.3s ease;
+}
