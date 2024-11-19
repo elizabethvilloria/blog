@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NewsletterSignup from './NewsletterSignup';
+import WelcomeMessage from './WelcomeMessage';
 import './App.css';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <div className="home">
       <h1 className="page-title">Welcome to Mauve</h1>
+      <WelcomeMessage />
       <div className="grid-container">
         {posts.map(post => (
           <div key={post.id} className="post-card">
