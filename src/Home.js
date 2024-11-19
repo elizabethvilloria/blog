@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h1>Mauve</h1>
+      <h1 className="page-title">Welcome to Mauve</h1>
       <div className="grid-container">
         {posts.map(post => (
           <div key={post.id} className="post-card">
