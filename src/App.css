@@ -710,3 +710,19 @@ button,
 .service-card:hover h2::after {
   width: 100%;
 }
+
+.social-icons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
