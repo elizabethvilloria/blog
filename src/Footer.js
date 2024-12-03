@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="social-icons">
+        <a href="#" className="social-icon">📷</a>
+        <a href="#" className="social-icon">💌</a>
+        <a href="#" className="social-icon">📱</a>
+      </div>
       <div className="footer-content">
         <div className="footer-section">
           <h3>About Mauve</h3>
