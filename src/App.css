@@ -46,6 +46,22 @@
   margin: 0;
   font-size: 1.2rem;
   text-align: center;
+  position: relative;
+}
+
+.post-card h2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFB6C1;
+  transition: width 0.3s ease;
+}
+
+.post-card:hover h2::after {
+  width: 100%;
 }
 
 /* Title styling with effects */
@@ -406,6 +422,22 @@ h1:hover {
 
 .service-card h2 {
   color: #FFB6C1;
+  position: relative;
+}
+
+.service-card h2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFB6C1;
+  transition: width 0.3s ease;
+}
+
+.service-card:hover h2::after {
+  width: 100%;
 }
 
 .service-card .price {
@@ -654,4 +686,27 @@ button,
 .nav-link, 
 .order-button {
   transition: all 0.3s ease;
+}
+
+/* Add this cool underline animation to your titles */
+.post-card h2,
+.service-card h2 {
+  position: relative;
+}
+
+.post-card h2::after,
+.service-card h2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFB6C1;
+  transition: width 0.3s ease;
+}
+
+.post-card:hover h2::after,
+.service-card:hover h2::after {
+  width: 100%;
 }
